@@ -1,0 +1,23 @@
+{
+  "name": "dismate",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "compile": "tsc -p .",
+    "start": "node build/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "discord.js": "^14.16.2",
+    "express": "^4.21.0",
+    "iconv-lite": "^0.6.3"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^22.7.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.2"
+  }
+}
