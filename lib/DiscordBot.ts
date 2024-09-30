@@ -30,9 +30,7 @@ client.on(Events.MessageCreate, async (message) => {
     await (channel as TextChannel)?.send("pong");
   }
 });
-/*export async function fetchChannels(guildId: string) {
-  client.channels.cache.get(guildId)?.send("pong");
-}*/
+
 export const fetchChannel = async (guildId: string) => {
   const channel = client.channels.cache.get(guildId);
   const messages = await (channel as TextChannel)?.messages.fetch();
