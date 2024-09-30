@@ -25,7 +25,6 @@ client.on(Events.MessageCreate, async (message) => {
   }
 
   if (message.content === "ping") {
-    await message.channel.send("pong");
     // メッセージが送信されたチャンネルがテキストチャンネルである場合
     const channel = client.channels.cache.get("1288430024168575029");
     await (channel as TextChannel)?.send("pong");
